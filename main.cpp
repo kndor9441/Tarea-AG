@@ -68,7 +68,7 @@ void display(void)
     glutSolidSphere(100.0,150.0,150.0);
     glFlush();
 }
-
+//clase de material brass
 void brass ()
 {
 	mate_ambient[0] = 0.329412f;
@@ -85,7 +85,7 @@ void brass ()
     /*definimos los parametros que necesitamos para nuestro material*/
 	}
 
-
+//clase de material glod
 void gold()
 {
 	mate_ambient[0] = 0.24725;
@@ -99,7 +99,7 @@ void gold()
     mate_specular[2] = 0.366065, 1.0f ;
     shine[0] = 20.0f;
 	}
-	
+	//clase de material copper
 	void copper()
 	{
 		mate_ambient[0] = 0.19125;
@@ -114,7 +114,7 @@ void gold()
     shine[0] = 15.0f;
 		}
 
-
+//clase de material red plastic
 void red_plastic()
 {
 	mate_ambient[0] = 0.0;
@@ -128,7 +128,7 @@ void red_plastic()
     mate_specular[2] =0.6, 1.0f ;
     shine[0] = 10.0f;
 	}
-	
+	//clase de material silver
 	void silver()
 	{
 	mate_ambient[0] = 0.19225;
