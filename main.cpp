@@ -147,27 +147,27 @@ void keyboard(unsigned char key, int x, int y)
 {
     switch (key)
     {
-    
+    //definimos la letra para el material brass
     case 'b':
     brass();
     break;
     
-    
+    //definimos la letra para el material gold
     case 'g':
     gold();
 	break;
 	
-    
+    //definimos la letra para el material copper
     case 'c':
     copper();
 	break;
 	
-    
+    //definimos la letra para el material red plastic
     case 'r':
     red_plastic();
 	break;
 	
-    
+    //definimos la letra para el material silver
     case 's':
     silver();
     
@@ -201,6 +201,8 @@ void move(int x, int y)
         ve_x = x - rex;
         ve_y = y - rey;
         glutPostRedisplay();
+        
+        //definicion de coordenadas de movimiento de foco de luz
     }
 void nomove(int x, int y)
     {
@@ -209,6 +211,8 @@ void nomove(int x, int y)
         stado = 0;
         ve_x = 0;
         ve_y = 0;
+        
+        //definicion de coordenadas cuando el no se esta moviendo el foco de luz
     }
 // Main del programa.
 int main(int argc, char **argv)
