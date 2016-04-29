@@ -8,6 +8,8 @@ int rex, rey;
 int ne_x, ne_y;
 int stado;
 
+//definimos las funciones para el cambio de material 
+
 float mate_ambient[] ={ 0.329412f,0.223529f,0.027451f ,1.0f};
 float mate_diffuse[] ={ 0.780392f,0.568627f,0.113725f,1.0f};
 float mate_specular[] ={0.992157f,0.807843f,0.04f,1.0f };
@@ -16,7 +18,7 @@ float shine[] ={27.8974f};
 
 void init(void)
 {
-	glClearColor(5.0,5.0,0.0,0.0);
+	glClearColor(5.0,5.0,0.0,0.0); //definimos el color de la ventana 
 
 // Activamos la fuente de luz
     glEnable(GL_LIGHTING);
@@ -184,6 +186,9 @@ void mouse_move(int button, int state, int x, int y)
                 ne_y = ne_y + ve_y;
             }
         }
+        
+        //definicion de los parametros de movimiento de mouse
+        
     }	
 void move(int x, int y)
     {
